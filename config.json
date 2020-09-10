@@ -1,0 +1,11 @@
+{
+  "assignees": [
+    "Name1 Surname1",
+    "Name2 Surname2"
+  ],
+  "forums": [
+    "website link to sunlearn forum 1",
+    "website link to sunlearn forum 2"
+  ],
+  "msteams": "MS Teams webhook link"
+}
