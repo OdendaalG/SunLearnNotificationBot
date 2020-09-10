@@ -27,6 +27,8 @@ as follows:
 pip install selenium pymsteams schedule
 ```
 
+To get a bit of help for Python webscraping with selenium, I would recommend this: https://towardsdatascience.com/web-scraping-using-selenium-python-8a60f4cf40ab
+
 ### Installing
 Download this repository to the folder setup in the previous step, activate the python environment, and
 run the python file.

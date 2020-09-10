@@ -6,6 +6,7 @@ import random
 import time
 import schedule
 
+# To give the webpage time to load, as my internet is slow.
 pageRefreshTime = 30
 counter = 0
 
@@ -74,7 +75,9 @@ def check(webpage, driver, people, mslink, sendmessage=False):
                         }
                         counter += 1
                         newData[idNum] = data[idNum]
-                    else: # There are replies, don't notify, but take note
+
+                    # There are replies, don't notify, but take note
+                    else:
                         print(time.ctime(), webid, "New topic with replies!\n", elem.text)
                         data[idNum] = {
                             'topic': elem.text,
@@ -142,7 +145,7 @@ def checker():
     for i in range(len(forums)):
         webpage = forums[i]
         driver.get(webpage)
-        check(webpage, driver, people, mslink, False)
+        check(webpage, driver, people, mslink, True)
         time.sleep(pageRefreshTime)
 
 schedule.every(everyT).minutes.do(checker)
